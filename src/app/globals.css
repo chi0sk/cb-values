@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Poppins:wght@400;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 254 56% 5%;
+    --foreground: 0 0% 100%;
+
+    --card: 265 49% 22%;
+    --card-foreground: 0 0% 100%;
+
+    --popover: 254 56% 5%;
+    --popover-foreground: 0 0% 100%;
+
+    --primary: 268 30% 49%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 280 39% 83%;
+    --secondary-foreground: 254 56% 5%;
+
+    --muted: 267 20% 20%;
+    --muted-foreground: 0 0% 80%;
+
+    --accent: 268 30% 49%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 267 20% 30%;
+    --input: 267 20% 30%;
+    --ring: 280 39% 83%;
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: 'Montserrat', sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+  }
+}
+
+.card-gradient {
+  background: linear-gradient(to bottom, #291d45, #2d1d54);
+}
